@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Champ } from './champ';
+import { ChampServiceService } from '../champ-service.service';
 
 @Component({
   selector: 'app-champions',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChampionsComponent implements OnInit {
 
-  constructor() { }
+  champs: Champ[];
+
+  constructor(private champService: ChampServiceService) { }
 
   ngOnInit() {
+    this.getChamps();
+  }
+
+  getChamps() {
+    this.champService.getChamps().subscribe(champs => this.champs = champs);
+  }
+
+  getRowNumber(): number {
+    return Math.ceil(this.champs.length / 3);
   }
 
 }

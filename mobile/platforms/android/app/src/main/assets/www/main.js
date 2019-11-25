@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!--\r\n<mat-grid-list cols=\"2\" class=\"header mat-app-background\" rowHeight=\"fit\" >\r\n    <mat-grid-tile><button (click)=\"sidenav.toggle()\">Toggle</button></mat-grid-tile>\r\n    <mat-grid-tile>Hallo Welt!</mat-grid-tile>\r\n</mat-grid-list>\r\n<mat-toolbar>\r\n    <span><button (click)=\"sidenav.toggle()\" class=\"btn btn-primary\">Toggle</button></span>\r\n    <span>Hallo Welt!</span>\r\n</mat-toolbar>\r\n-->\r\n<nav class=\"navbar navbar-dark bg-primary\">\r\n  <a class=\"navbar-brand homeButton\" (click)=\"sidenav.toggle()\"><mat-icon style=\"color: white;\">list</mat-icon></a>\r\n  <span class=\"navbar-brand\" href=\"#\">TFTeammate</span>\r\n</nav>\r\n<mat-sidenav-container class=\"example-container\">\r\n  <mat-sidenav #sidenav mode=\"side\" [(opened)]=\"opened\" class=\"sidenav\" mode=\"over\">\r\n    <mat-nav-list role=\"list\">\r\n      <div class=\"list-group\">\r\n        <button type=\"button\" class=\"list-group-item list-group-item-action\" routerLink=\"/champs\" (click)=\"test()\" (click)=\"sidenav.toggle()\">Champions</button>\r\n        <button type=\"button\" class=\"list-group-item list-group-item-action\" routerLink=\"/items\" (click)=\"test()\" (click)=\"sidenav.toggle()\">Items</button>\r\n        <button type=\"button\" class=\"list-group-item list-group-item-action\" routerLink=\"/elements\" (click)=\"test()\" (click)=\"sidenav.toggle()\">Elemente</button>\r\n        <button type=\"button\" class=\"list-group-item list-group-item-action\" routerLink=\"/properties\" (click)=\"test()\" (click)=\"sidenav.toggle()\">Eigenschaften</button>\r\n      </div>\r\n    </mat-nav-list>\r\n  </mat-sidenav>\r\n  <mat-sidenav-content>\r\n\r\n    <router-outlet></router-outlet>\r\n\r\n  </mat-sidenav-content>\r\n</mat-sidenav-container>\r\n\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!--\r\n<mat-grid-list cols=\"2\" class=\"header mat-app-background\" rowHeight=\"fit\" >\r\n    <mat-grid-tile><button (click)=\"sidenav.toggle()\">Toggle</button></mat-grid-tile>\r\n    <mat-grid-tile>Hallo Welt!</mat-grid-tile>\r\n</mat-grid-list>\r\n<mat-toolbar>\r\n    <span><button (click)=\"sidenav.toggle()\" class=\"btn btn-primary\">Toggle</button></span>\r\n    <span>Hallo Welt!</span>\r\n</mat-toolbar>\r\n-->\r\n<nav class=\"navbar navbar-dark bg-primary sticky-top\">\r\n  <a class=\"navbar-brand homeButton\" (click)=\"sidenav.toggle()\"><mat-icon style=\"color: white;\">list</mat-icon></a>\r\n  <span class=\"navbar-brand\" href=\"#\">TFTeammate</span>\r\n</nav>\r\n<mat-sidenav-container class=\"example-container\">\r\n  <mat-sidenav #sidenav mode=\"side\" [(opened)]=\"opened\" class=\"sidenav\" mode=\"over\">\r\n    <mat-nav-list role=\"list\">\r\n      <div class=\"list-group\">\r\n        <button type=\"button\" class=\"list-group-item list-group-item-action\" routerLink=\"/champs\" (click)=\"test()\" (click)=\"sidenav.toggle()\">Champions</button>\r\n        <button type=\"button\" class=\"list-group-item list-group-item-action\" routerLink=\"/items\" (click)=\"test()\" (click)=\"sidenav.toggle()\">Items</button>\r\n        <button type=\"button\" class=\"list-group-item list-group-item-action\" routerLink=\"/elements\" (click)=\"test()\" (click)=\"sidenav.toggle()\">Elemente</button>\r\n        <button type=\"button\" class=\"list-group-item list-group-item-action\" routerLink=\"/properties\" (click)=\"test()\" (click)=\"sidenav.toggle()\">Eigenschaften</button>\r\n      </div>\r\n    </mat-nav-list>\r\n  </mat-sidenav>\r\n  <mat-sidenav-content>\r\n\r\n    <router-outlet></router-outlet>\r\n\r\n  </mat-sidenav-content>\r\n</mat-sidenav-container>\r\n\r\n");
 
 /***/ }),
 
@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n<h2>Champions</h2>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n<h2>Champions</h2>\n\n</div>\n\n\n<mat-grid-list cols=\"3\" gutterSize=\"25\">\n\n  <ng-template ngFor let-champ [ngForOf]=\"champs\" let-i=\"index\">\n    <mat-grid-tile>\n      <div class=\"card\">\n        <img src=\"{{champ.iconFile}}\" class=\"card-img-top\" alt=\"...\">\n        <div class=\"card-body\">\n          <p class=\"card-text\">{{champ.name}}</p>\n        </div>\n      </div>\n    </mat-grid-tile>\n  </ng-template>\n\n\n  <ng-template ngFor let-champ [ngForOf]=\"champs\" let-i=\"index\">\n      <mat-grid-tile>\n        <div class=\"card\">\n          <img src=\"{{champ.iconFile}}\" class=\"card-img-top\" alt=\"...\">\n          <div class=\"card-body\">\n            <p class=\"card-text\">{{champ.name}}</p>\n          </div>\n        </div>\n      </mat-grid-tile>\n    </ng-template>\n    <ng-template ngFor let-champ [ngForOf]=\"champs\" let-i=\"index\">\n        <mat-grid-tile>\n          <div class=\"card\">\n            <img src=\"{{champ.iconFile}}\" class=\"card-img-top\" alt=\"...\">\n            <div class=\"card-body\">\n              <p class=\"card-text\">{{champ.name}}</p>\n            </div>\n          </div>\n        </mat-grid-tile>\n      </ng-template>\n      <ng-template ngFor let-champ [ngForOf]=\"champs\" let-i=\"index\">\n          <mat-grid-tile>\n            <div class=\"card\">\n              <img src=\"{{champ.iconFile}}\" class=\"card-img-top\" alt=\"...\">\n              <div class=\"card-body\">\n                <p class=\"card-text\">{{champ.name}}</p>\n              </div>\n            </div>\n          </mat-grid-tile>\n        </ng-template>\n        <ng-template ngFor let-champ [ngForOf]=\"champs\" let-i=\"index\">\n            <mat-grid-tile>\n              <div class=\"card\">\n                <img src=\"{{champ.iconFile}}\" class=\"card-img-top\" alt=\"...\">\n                <div class=\"card-body\">\n                  <p class=\"card-text\">{{champ.name}}</p>\n                </div>\n              </div>\n            </mat-grid-tile>\n          </ng-template>\n          <ng-template ngFor let-champ [ngForOf]=\"champs\" let-i=\"index\">\n              <mat-grid-tile>\n                <div class=\"card\">\n                  <img src=\"{{champ.iconFile}}\" class=\"card-img-top\" alt=\"...\">\n                  <div class=\"card-body\">\n                    <p class=\"card-text\">{{champ.name}}</p>\n                  </div>\n                </div>\n              </mat-grid-tile>\n            </ng-template>\n            <ng-template ngFor let-champ [ngForOf]=\"champs\" let-i=\"index\">\n                <mat-grid-tile>\n                  <div class=\"card\">\n                    <img src=\"{{champ.iconFile}}\" class=\"card-img-top\" alt=\"...\">\n                    <div class=\"card-body\">\n                      <p class=\"card-text\">{{champ.name}}</p>\n                    </div>\n                  </div>\n                </mat-grid-tile>\n              </ng-template>\n              <ng-template ngFor let-champ [ngForOf]=\"champs\" let-i=\"index\">\n                  <mat-grid-tile>\n                    <div class=\"card\">\n                      <img src=\"{{champ.iconFile}}\" class=\"card-img-top\" alt=\"...\">\n                      <div class=\"card-body\">\n                        <p class=\"card-text\">{{champ.name}}</p>\n                      </div>\n                    </div>\n                  </mat-grid-tile>\n                </ng-template>\n                <ng-template ngFor let-champ [ngForOf]=\"champs\" let-i=\"index\">\n                    <mat-grid-tile>\n                      <div class=\"card\">\n                        <img src=\"{{champ.iconFile}}\" class=\"card-img-top\" alt=\"...\">\n                        <div class=\"card-body\">\n                          <p class=\"card-text\">{{champ.name}}</p>\n                        </div>\n                      </div>\n                    </mat-grid-tile>\n                  </ng-template>\n                  <ng-template ngFor let-champ [ngForOf]=\"champs\" let-i=\"index\">\n                      <mat-grid-tile>\n                        <div class=\"card\">\n                          <img src=\"{{champ.iconFile}}\" class=\"card-img-top\" alt=\"...\">\n                          <div class=\"card-body\">\n                            <p class=\"card-text\">{{champ.name}}</p>\n                          </div>\n                        </div>\n                      </mat-grid-tile>\n                    </ng-template>\n\n</mat-grid-list>\n\n\n\n\n\n\n\n\n\n<!--\n<ul>\n  <ng-template ngFor let-champ [ngForOf]=\"champs\" let-i=\"index\">\n\n  </ng-template>\n</ul>\n-->\n");
 
 /***/ }),
 
@@ -586,6 +586,42 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/champ-service.service.ts":
+/*!******************************************!*\
+  !*** ./src/app/champ-service.service.ts ***!
+  \******************************************/
+/*! exports provided: ChampServiceService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChampServiceService", function() { return ChampServiceService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _mock_heroes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./mock-heroes */ "./src/app/mock-heroes.ts");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+
+
+
+
+var ChampServiceService = /** @class */ (function () {
+    function ChampServiceService() {
+    }
+    ChampServiceService.prototype.getChamps = function () {
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(_mock_heroes__WEBPACK_IMPORTED_MODULE_2__["CHAMPS"]);
+    };
+    ChampServiceService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        })
+    ], ChampServiceService);
+    return ChampServiceService;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/champions/champions.component.css":
 /*!***************************************************!*\
   !*** ./src/app/champions/champions.component.css ***!
@@ -611,13 +647,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChampionsComponent", function() { return ChampionsComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _champ_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../champ-service.service */ "./src/app/champ-service.service.ts");
+
 
 
 var ChampionsComponent = /** @class */ (function () {
-    function ChampionsComponent() {
+    function ChampionsComponent(champService) {
+        this.champService = champService;
     }
     ChampionsComponent.prototype.ngOnInit = function () {
+        this.getChamps();
     };
+    ChampionsComponent.prototype.getChamps = function () {
+        var _this = this;
+        this.champService.getChamps().subscribe(function (champs) { return _this.champs = champs; });
+    };
+    ChampionsComponent.prototype.getRowNumber = function () {
+        return Math.ceil(this.champs.length / 3);
+    };
+    ChampionsComponent.ctorParameters = function () { return [
+        { type: _champ_service_service__WEBPACK_IMPORTED_MODULE_2__["ChampServiceService"] }
+    ]; };
     ChampionsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-champions',
@@ -720,6 +770,27 @@ var ItemsComponent = /** @class */ (function () {
     return ItemsComponent;
 }());
 
+
+
+/***/ }),
+
+/***/ "./src/app/mock-heroes.ts":
+/*!********************************!*\
+  !*** ./src/app/mock-heroes.ts ***!
+  \********************************/
+/*! exports provided: CHAMPS */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CHAMPS", function() { return CHAMPS; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+
+var CHAMPS = [
+    { id: 1, name: "Aatrox", tier: 3, costs: 3, properties: ["Licht", "Klingenmeister"], iconFile: "assets/res/aatrox.PNG" },
+    { id: 2, name: "Annie", tier: 4, costs: 4, properties: ["Inferno", "Beschwörer"], iconFile: "assets/res/annie.PNG" },
+    { id: 3, name: "Ashe", tier: 4, costs: 4, properties: ["Kristall", "Bogenschützen"], iconFile: "assets/res/ashe.PNG" }
+];
 
 
 /***/ }),
@@ -882,7 +953,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_3__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Tim\projekte\Angular\angular-app\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! c:\Users\Tim\projekte\Angular\angular-app\src\main.ts */"./src/main.ts");
 
 
 /***/ })

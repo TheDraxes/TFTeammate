@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Aatrox",
+    "costs": "3",
+    "properties": ["Licht","Klingenmeister"],
+    "tier": "3",
+    "icon": "../../res/aatrox.png"
+  },
+  {
+    "name": "Annie",
+    "costs": "4",
+    "properties": ["Inferno","Beschwörer"],
+    "tier": "4",
+    "icon": "../../res/annie.png"
+  },
+  {
+    "name": "ashe",
+    "costs": "4",
+    "properties": ["Kristall","Bogenschütze"],
+    "tier": "4",
+    "icon": "../../res/ashe.png"
+  }
+]
