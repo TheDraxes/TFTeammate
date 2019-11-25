@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'angular-app';
   opened: boolean;
 
-  test(){
+  test() {
     console.log("Hallo");
   }
 }

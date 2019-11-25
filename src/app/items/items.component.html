@@ -1,3 +1,41 @@
 <div class="container">
   <h2>Items</h2>
+  <!--
+  <table class="table table-borderless">
+    <tr ng-repeat="_ in Items" let i = index ng-if="$index % 4 == 0">
+      <td ng-repeat="i in [$index, $index + 1, $index + 2]" ng-init="item = Items[i]">
+      </td>
+    </tr>
+  </table>
+-->
+  <table>
+    <tr *ngFor="let item of Items; let i = index" ng-If="i%4 === 0">
+      <td *ngFor="i in [i, i + 1, i + 2]" ng-init="itemex = Items[i]">
+        {{i}}
+      </td>
+    </tr>
+  </table>
+
+  <!--
+  <div class="d-flex p-2">
+    <ng-template ngFor let-item [ngForOf]="Items" let-i="index" [ngForTrackBy]="trackById">
+      <img src="{{item.img}}" style="width: 60px; margin-right: 6px;" class="my-auto"/>
+      <p> {{i}} </p>
+      <ng-template [ngIf]="i % 4 === 0">
+        <p> Test </p>
+        <br>
+      </ng-template>
+    </ng-template>
+  </div>
+-->
+  <!--
+  <table >
+    <tr>
+      <ng-template ngFor let-item [ngForOf]="Items">
+        <td><img src="{{item.img}}" style="width: 50px;"></td>
+      </ng-template>
+    </tr>
+  </table>
+  -->
+
 </div>
